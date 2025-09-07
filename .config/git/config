@@ -44,6 +44,10 @@
 	abbrevCommit = true
 	graphColors = blue,yellow,cyan,magenta,green,red
 
+[submodule]
+	recurse = true
+	recurseSubmodules = on-demand
+
 [url "git@github.com:whoiscircuit/"]
 	insteadOf = "me:"
 
