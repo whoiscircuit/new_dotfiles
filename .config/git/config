@@ -8,7 +8,6 @@
 	fsmonitor = true
 
 [pager]
-	diff = delta
 	branch = false
 	tag = false
 
@@ -16,6 +15,7 @@
 	defaultBranch = main
 
 [diff]
+        external = difft
 	algorithm = histogram
 	renames = copies
 [commit]
