@@ -1,0 +1,29 @@
+#!/usr/bin/env zsh
+# simple and quick command to serve the current directory over local Network with python SimpleHTTPServer module + displaying all ip addresses
+# also open a http server with woof on the next port for uploading files from other devices to current directory!
+
+if ! command -v python &>/dev/null; then
+    echo "$0 requires python to work..." >&2
+fi
+
+DOWNLOAD_PORT="${1:-8000}"
+UPLOAD_PORT="$(($DOWNLOAD_PORT + 1))"
+COLOR="\033[0;33m"
+NC="\033[0;m"
+if command -v ifconfig &>/dev/null; then
+  echo "IPs: ${COLOR}$(ifconfig | grep inet | awk '{print $2}' | grep -v '::' | tr '\n' '\t')${NC}"
+elif command -v ip &>/dev/null; then
+  echo "IPs: ${COLOR}$(ip address | grep inet | awk '{print $2}' | grep -v '::' | cut -d'/' -f1 | tr '\n' '\t')${NC}"
+fi
+echo "Download Port: ${COLOR}${DOWNLOAD_PORT}${NC}\tUpload Port: ${COLOR}${UPLOAD_PORT}${NC}"
+
+trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
+
+if command -v woof &>/dev/null; then
+    woof -U -c 99999 -p "$UPLOAD_PORT" &>/dev/null &
+else
+    echo "woof is not installed on the system so the upload server won't work..." >&2
+fi
+
+
+python -m http.server "$DOWNLOAD_PORT" --cgi >/dev/null
