@@ -73,6 +73,8 @@ alias decode64="base64 -d"
 # nixos aliases
 alias hms="home-manager switch --flake ~/.nixconf#user"
 alias nrs="sudo nixos-rebuild switch --flake ~/.nixconf#vm"
+function whichnix(){ readlink -f "$(command which $1)"; }
+alias which=whichnix
 
 if has gtrash; then
   alias rm="gtrash put --rm-mode"
