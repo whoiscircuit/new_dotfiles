@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!usr/bin/env zsh
 
 # these envrinment variables should be set here because when they are set in ~/.config/env (like other environment variables)
 # they get overwritten by zsh at launch
@@ -10,6 +10,10 @@ export SAVEHIST=20000
 # allow new shells to have zero delay displaying the prompt
 [[ -r "${XDG_CACHE_HOME}/p10k-instant-prompt-${(%):-%n}.zsh" ]] && source "${XDG_CACHE_HOME}/p10k-instant-prompt-${(%):-%n}.zsh"
 
+
+####################
+# PLUGINS
+####################
 # bootstrap zert plugin manager
 export ZERT_LOCKFILE="$ZDOTDIR/zert.lock"
 [ ! -f "${ZERT_PLUGINS_DIR:-${ZERT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/zert}/plugins}/zert/zert.plugin.zsh" ]  && {
@@ -81,5 +85,40 @@ source "$ZDOTDIR/scripts/asciinema.zsh" # my custom functions and aliases for as
 fpath+=("$ZDOTDIR/completions")
 autoload -Uz compinit && compinit -C
 autoload -Uz bashcompinit && bashcompinit
+
+####################
+# OPTIONS
+####################
+# don't use any global rc files
+setopt no_global_rcs
+
+# enable bash-like extended globing
+setopt ksh_glob
+
+# ignore contigous duplicate commands in history
+setopt hist_ignore_all_dups
+
+# don't add commands that start with a space to history
+setopt hist_ignore_space
+
+# don't store the "history" command itself to history
+setopt hist_no_store
+
+# add entered commands to history immediatly not after the shell is closed
+setopt inc_append_history
+
+# run background jobs at a lower priority
+setopt bg_nice
+
+# ctrl-d will not exit the shell
+setopt ignore_eof
+
+# no beeping
+setopt no_beep
+
+####################
+# ALIASES
+####################
+source "$ZDOTDIR/alias.zsh"
 
 [ -f "$ZDOTDIR/p10k.zsh" ] && source "$ZDOTDIR/p10k.zsh"
