@@ -1,0 +1,6 @@
+[session]
+command = "_ASCIINEMA_SEGMENT=1 /usr/bin/env zsh"
+idle_time_limit = 2
+
+[notifications]
+enabled = false

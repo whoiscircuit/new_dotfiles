@@ -65,6 +65,19 @@ if (( ${+commands[direnv]} )); then
     }
 fi
 
+# show command autosuggestion (after the cursor in gray color) based on history, zsh completions, etc..
+zert add zsh-users/zsh-autosuggestions
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=200
+export ZSH_AUTOSUGGEST_COMPLETION_IGNORE="npm *"
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+zert add zsh-users/zsh-history-substring-search
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=
+HISTORY_SUBSTRING_SEARCH_PREFIXED=1
+
+source "$ZDOTDIR/scripts/asciinema.zsh" # my custom functions and aliases for asciinema
+
 fpath+=("$ZDOTDIR/completions")
 autoload -Uz compinit && compinit -C
 autoload -Uz bashcompinit && bashcompinit
