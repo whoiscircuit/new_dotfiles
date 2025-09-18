@@ -83,7 +83,7 @@ HISTORY_SUBSTRING_SEARCH_PREFIXED=1
 source "$ZDOTDIR/scripts/asciinema.zsh" # my custom functions and aliases for asciinema
 
 # these plugins should be loaded before compinit
-for completion_plugin in ( docker-compose gitfast git-extras flutter golang gh pylint redis-cli )
+for completion_plugin in docker-compose gitfast git-extras flutter golang gh pylint; do
     zert use ohmyzsh plugins/$completion_plugin --no-alises
 done
 
@@ -92,7 +92,7 @@ autoload -Uz compinit && compinit -C
 autoload -Uz bashcompinit && bashcompinit
 
 # these plugins should be loaded after compinit
-for completion_plugin in ( dotnet lxd ); then
+for completion_plugin in dotnet lxd; do
     zert use ohmyzsh plugins/$completion_plugin --no-aliases
 done
 command -v fzf-share &> /dev/null && source "$(fzf-share)/completion.zsh"
