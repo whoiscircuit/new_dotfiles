@@ -127,6 +127,20 @@ setopt ignore_eof
 # no beeping
 setopt no_beep
 
+
+####################
+# KEYBINDINGS
+####################
+# use emacs keybindings
+bindkey -e
+WORDCHARS=
+bindkey "^H" backward-kill-word # Ctrl+Backspace
+bindkey "^Oc" forward-word # Ctrl+<Right>
+bindkey "^[[1;5C" forward-word # Ctrl+<Right> for vterm
+bindkey "^Od" backward-word # Ctrl+<Left>
+bindkey "^[[1;5D" backward-word # Ctrl+<Left> for vterm
+
+
 ####################
 # ALIASES
 ####################
