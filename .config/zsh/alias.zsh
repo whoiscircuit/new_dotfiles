@@ -72,7 +72,7 @@ alias decode64="base64 -d"
 
 # nixos aliases
 alias hms="home-manager switch --flake ~/.nixconf#user"
-alias nrs="sudo nixos-rebuild switch --flake ~/.nixconf#vm"
+alias nrs="sudo nixos-rebuild switch --flake ~/.nixconf#main --impure"
 function whichnix(){ readlink -f "$(command which $1)"; }
 alias which=whichnix
 
