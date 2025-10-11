@@ -245,7 +245,7 @@
               "Method": "GET",
               "IconURL": "https://search.nixos.org/favicon.png",
               "Alias": "nixpkgs,nix"
-            },
+            }
         ]
     },
     "SearchSuggestEnabled": true,
