@@ -228,11 +228,24 @@
             {
               "Name": "Torob",
               "URLTemplate": "https://torob.com/search/?query={searchTerms}",
-              "SuggestURLTemplate": "https://api.torob.com/suggestion2/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://assets.torob.com/public/main/images/favicon.png",
               "Alias": "torob"
-            }
+            },
+            {
+              "Name": "Digikala",
+              "URLTemplate": "https://www.digikala.com/search/?q={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://www.digikala.com/android-icon-192x192.png",
+              "Alias": "digikala"
+            },
+            {
+              "Name": "NixOS Packages",
+              "URLTemplate": "https://search.nixos.org/packages?query={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://search.nixos.org/favicon.png",
+              "Alias": "nixpkgs,nix"
+            },
         ]
     },
     "SearchSuggestEnabled": true,
