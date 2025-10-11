@@ -223,6 +223,18 @@
     },
     "PromptForDownloadLocation": false,
     "RequestedLocales": "en-US,de,fa-IR",
+    "SearchEngines": {
+        "Add": [
+            {
+              "Name": "Torob",
+              "URLTemplate": "https://torob.com/search/?query={searchTerms}",
+              "SuggestURLTemplate": "https://api.torob.com/suggestion2/?q={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://assets.torob.com/public/main/images/favicon.png",
+              "Alias": "torob"
+            }
+        ]
+    },
     "SearchSuggestEnabled": true,
     "UserMessaging": {
       "WhatsNew": false,
