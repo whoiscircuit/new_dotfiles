@@ -247,11 +247,25 @@
               "Alias": "nixpkgs"
             },
             {
-              "Name": "NixOS Packages",
-              "URLTemplate": "https://search.nixos.org/packages?query={searchTerms}",
+              "Name": "NixOS Options",
+              "URLTemplate": "https://search.nixos.org/options?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://search.nixos.org/favicon.png",
-              "Alias": "nix"
+              "Alias": "nixos"
+            },
+            {
+              "Name": "Home-Manager Options",
+              "URLTemplate": "https://home-manager-options.extranix.com/?query={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://home-manager-options.extranix.com/images/favicon.png",
+              "Alias": "home-manager"
+            },
+            {
+              "Name": "ChatGPT",
+              "URLTemplate": "https://chatgpt.com/?q={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://cdn.oaistatic.com/assets/favicon-eex17e9e.ico",
+              "Alias": "gpt"
             }
         ]
     },
