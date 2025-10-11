@@ -308,6 +308,13 @@
               "Method": "GET",
               "IconURL": "https://www.redditstatic.com/shreddit/assets/favicon/128x128.png",
               "Alias": "reddit"
+            },
+            {
+              "Name": "Divar",
+              "URLTemplate": "https://divar.ir/?q={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://s100.divarcdn.com/static/thewall-assets/favicon-32x32.png",
+              "Alias": "divar"
             }
         ]
     },
