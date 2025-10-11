@@ -244,7 +244,14 @@
               "URLTemplate": "https://search.nixos.org/packages?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://search.nixos.org/favicon.png",
-              "Alias": "nixpkgs,nix"
+              "Alias": "nixpkgs"
+            },
+            {
+              "Name": "NixOS Packages",
+              "URLTemplate": "https://search.nixos.org/packages?query={searchTerms}",
+              "Method": "GET",
+              "IconURL": "https://search.nixos.org/favicon.png",
+              "Alias": "nix"
             }
         ]
     },
