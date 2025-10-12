@@ -37,7 +37,9 @@ export DIRENV_LOG_FORMAT=""
 # eval $(pelz env $MY_THEME)
 
 # xdg
-# export GTK_THEME=Gruvbox-Material-Dark
+export GTK_THEME=Gruvbox-Material-Dark
+export QT_QPA_PLATFORMTHEME=qt6ct   # for Qt apps
+
 
 # load environment variables local to this device
 # [[ -f "${XDG_CONFIG_HOME}/env.local" ]] && source "${XDG_CONFIG_HOME}/env.local"
