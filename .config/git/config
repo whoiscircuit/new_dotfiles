@@ -1,7 +1,5 @@
 [user]
 	name=azad
-	email=azad0xf1@gmail.com
-	signingkey = ~/.ssh/id_azad.pub
 
 [core]
 	compression = 4
@@ -18,8 +16,6 @@
         external = difft
 	algorithm = histogram
 	renames = copies
-[commit]
-	gpgSign = true
 
 [branch]
 	sort = -committerdate
