@@ -37,7 +37,8 @@
               "adguard-annoyance",
               "fanboy-annoyance",
               "https://raw.githubusercontent.com/DandelionSprout/adfilt/refs/heads/master/BrowseWebsitesWithoutLoggingIn.txt",
-              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt"
+              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt",
+              "https://raw.githubusercontent.com/fmhy/FMHYFilterlist/main/filterlist.txt"
             ]
           }
         }
@@ -79,7 +80,7 @@
     "DisableProfileRefresh": true,
     "DisableTelemetry": true,
     "DisplayBookmarksToolbar": "always",
-    "DisplayMenuBar": "never",
+    "DisplayMenuBar": "default-off",
     "DNSOverHTTPS": {
       "Enabled": false
     },
@@ -186,12 +187,6 @@
       },
       "Location": {
         "BlockNewRequests": true
-      },
-      "Camera": {
-        "BlockNewRequests": false
-      },
-      "Microphone": {
-        "BlockNewRequests": false
       }
     },
     "PopupBlocking": {
@@ -200,6 +195,9 @@
     },
     "Preferences": {
       "browser.display.use_system_colors": {
+        "Value": true
+      },
+      "browser.sessionstore.resume_from_crash": {
         "Value": true
       },
       "toolkit.legacyUserProfileCustomizations.stylesheets": {
