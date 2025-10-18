@@ -256,14 +256,14 @@
               "URLTemplate": "https://home-manager-options.extranix.com/?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://home-manager-options.extranix.com/images/favicon.png",
-              "Alias": "@home-manager, @hm"
+              "Alias": "@hm"
             },
             {
               "Name": "ChatGPT",
               "URLTemplate": "https://chatgpt.com/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://cdn.oaistatic.com/assets/favicon-eex17e9e.ico",
-              "Alias": "@gpt, @chatgpt"
+              "Alias": "@gpt"
             },
             {
               "Name": "Claude",
