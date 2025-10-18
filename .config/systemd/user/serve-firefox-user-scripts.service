@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple Python HTTP server to serve user-scripts and firefox home page locally
+After=graphical-session.target
+
+[Service]
+WorkingDirectory=%h/.config/firefox/user-scripts
+ExecStart=/usr/bin/env python3 -m http.server 36712 --bind 127.0.0.1
+Restart=on-failure
+RestartSec=5
+Type=simple
+
+[Install]
+WantedBy=default.target
