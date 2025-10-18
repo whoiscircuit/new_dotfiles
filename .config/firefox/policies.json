@@ -228,91 +228,91 @@
               "URLTemplate": "https://torob.com/search/?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://assets.torob.com/public/main/images/favicon.png",
-              "Alias": "torob"
+              "Alias": "@torob"
             },
             {
               "Name": "Digikala",
               "URLTemplate": "https://www.digikala.com/search/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://www.digikala.com/android-icon-192x192.png",
-              "Alias": "digikala"
+              "Alias": "@digikala"
             },
             {
               "Name": "NixOS Packages",
               "URLTemplate": "https://search.nixos.org/packages?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://search.nixos.org/favicon.png",
-              "Alias": "nixpkgs"
+              "Alias": "@nixpkgs"
             },
             {
               "Name": "NixOS Options",
               "URLTemplate": "https://search.nixos.org/options?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://search.nixos.org/favicon.png",
-              "Alias": "nixos"
+              "Alias": "@nixos"
             },
             {
               "Name": "Home-Manager Options",
               "URLTemplate": "https://home-manager-options.extranix.com/?query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://home-manager-options.extranix.com/images/favicon.png",
-              "Alias": "home-manager"
+              "Alias": "@home-manager, @hm"
             },
             {
               "Name": "ChatGPT",
               "URLTemplate": "https://chatgpt.com/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://cdn.oaistatic.com/assets/favicon-eex17e9e.ico",
-              "Alias": "gpt"
+              "Alias": "@gpt, @chatgpt"
             },
             {
               "Name": "Claude",
               "URLTemplate": "https://claude.ai/new?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://claude.ai/images/claude_app_icon.png",
-              "Alias": "claude"
+              "Alias": "@claude"
             },
             {
               "Name": "Duck AI",
               "URLTemplate": "https://duckduckgo.com/?ia=chat&bang=true&q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://duckduckgo.com/favicon.ico",
-              "Alias": "duckai"
+              "Alias": "@duckai"
             },
             {
               "Name": "Github",
               "URLTemplate": "https://github.com/search?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://github.githubassets.com/favicons/favicon.png",
-              "Alias": "github"
+              "Alias": "@github"
             },
             {
               "Name": "Grok",
               "URLTemplate": "https://grok.com/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://grok.com/images/favicon-dark.png",
-              "Alias": "grok"
+              "Alias": "@grok"
             },
             {
               "Name": "YouTube",
               "URLTemplate": "https://www.youtube.com/results?search_query={searchTerms}",
               "Method": "GET",
               "IconURL": "https://www.youtube.com/s/desktop/26a38178/img/favicon.ico",
-              "Alias": "yt"
+              "Alias": "@yt"
             },
             {
               "Name": "Reddit",
               "URLTemplate": "https://www.reddit.com/search/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://www.redditstatic.com/shreddit/assets/favicon/128x128.png",
-              "Alias": "reddit"
+              "Alias": "@reddit"
             },
             {
               "Name": "Divar",
               "URLTemplate": "https://divar.ir/?q={searchTerms}",
               "Method": "GET",
               "IconURL": "https://s100.divarcdn.com/static/thewall-assets/favicon-32x32.png",
-              "Alias": "divar"
+              "Alias": "@divar"
             }
         ]
     },
