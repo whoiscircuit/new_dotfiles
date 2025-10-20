@@ -33,7 +33,7 @@
 }
 #TabsToolbar {
   max-height: var(--my-tab-bar-height);
-  font-size: 80%;
+  font-size: 90%;
 }
 #TabsToolbar-customization-target {
   max-height: var(--my-tab-bar-height);
