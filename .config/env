@@ -24,7 +24,6 @@ export PATH="$XDG_BIN_HOME:$PATH" # add my own scripts and binaries
 # set defaults
 export EDITOR="code"
 export BROWSER="firefox"
-
 export SAVEHIST=20000 # maximum size for $HISTFILE
 
 # make direnv work silently
@@ -39,6 +38,10 @@ export DIRENV_LOG_FORMAT=""
 # xdg
 export GTK_THEME=Gruvbox-Material-Dark
 export QT_QPA_PLATFORMTHEME=qt6ct   # for Qt apps
+
+if command -v bitwarden &>/dev/null && [[ -r "${HOME}/.bitwarden-ssh-agent.sock" ]]; then
+    export SSH_AUTH_SOCK="${HOME}/.bitwarden-ssh-agent.sock"
+fi
 
 
 # load environment variables local to this device
