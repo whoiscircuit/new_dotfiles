@@ -198,7 +198,7 @@
         "Value": true
       },
       "browser.sessionstore.resume_from_crash": {
-        "Value": true
+        "Value": false
       },
       "toolkit.legacyUserProfileCustomizations.stylesheets": {
         "Value": true
@@ -217,7 +217,7 @@
       },
       "browser.newtab.privateAllowed": {
         "Value": true
-      }
+      },
     },
     "PromptForDownloadLocation": false,
     "RequestedLocales": "en-US,de,fa-IR",
