@@ -318,7 +318,8 @@
               "Name": "Copilot",
               "URLTemplate": "https://copilot.microsoft.com/?q={searchTerms}",
               "Method": "GET",
-              "IconURL": "https://copilot.microsoft.com/static/cmc/favicon.ico"
+              "IconURL": "https://copilot.microsoft.com/static/cmc/favicon.ico",
+              "Alias": "@copilot"
             }
         ]
     },
