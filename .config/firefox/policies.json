@@ -130,10 +130,10 @@
         "install_url": "https://github.com/mkaply/queryamoid/releases/download/v0.2/query_amo_addon_id-0.2-fx.xpi",
         "default_area": "menupanel"
       },
-      "vimium-c@gdh1995.cn": {
+      "{d7742d87-e61d-4b78-b8a1-b469842139fa}": {
         "description": "control web pages and the browser with the keyboard",
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/vimium-c/latest.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi",
         "default_area": "navbar"
       }
     },
