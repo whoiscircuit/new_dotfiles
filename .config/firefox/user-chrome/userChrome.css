@@ -8,7 +8,6 @@
 @import url("firefox-csshacks/chrome/inline_tab_audio_icons.css");
 @import url("firefox-csshacks/chrome/compact_extensions_panel.css");
 @import url("firefox-csshacks/chrome/multi-row_bookmarks.css");
-@import url("firefox-csshacks/chrome/newtab_button_always_on_hover.css");
 @import url("firefox-csshacks/chrome/numbered_tabs.css");
 #navigator-toolbox {
   --uc-autohide-toolbar-delay: 250ms !important;
