@@ -68,6 +68,30 @@
         "URL": "javascript:(()=>{window.pageRotation = (window.pageRotation || 0 ) + 90; document.body.style.transform = `rotate(${window.pageRotation}deg)`;document.body.style.width = '100vw'; document.body.style.height = '100vh'})()"
       }
     ],
+    "Containers": {
+      "Default": [
+        {
+          "name": "Alt1",
+          "icon": "fingerprint",
+          "color": "blue"
+        },
+        {
+          "name": "Alt2",
+          "icon": "briefcase",
+          "color": "turquoise"
+        },
+        {
+          "name": "Alt3",
+          "icon": "dollar",
+          "color": "green"
+        },
+        {
+          "name": "Alt4",
+          "icon": "cart",
+          "color": "yellow"
+        }
+      ]
+    },
     "Cookies": {
       "Behavior": "reject-tracker-and-partition-foreign",
       "BehaviorBrivateBrowsing": "reject-tracker-and-partition-foreign"
@@ -135,6 +159,11 @@
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/vimium-c/latest.xpi",
         "default_area": "navbar"
+      },
+      "@testpilot-containers": {
+        "description": "have multiple accounts for the same website",
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi"
       }
     },
     "FirefoxHome": {
