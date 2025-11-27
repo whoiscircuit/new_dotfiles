@@ -69,25 +69,25 @@
       },
       {
         "Title": "Wayback Machine",
-        "Icon": "https://web-static.archive.org/_static/images/archive.ico",
+        "Favicon": "https://web-static.archive.org/_static/images/archive.ico",
         "URL": "javascript:(function(){ var wb = 'https://web.archive.org/web/*/' + window.location.href;window.open(wb, '_blank');})();",
         "Folder": "🗃️ Archives"
       },
       {
         "Title": "archive.today",
-        "Icon": "https://archive.ph/apple-touch-icon-144x144.png",
+        "Favicon": "https://archive.ph/apple-touch-icon-144x144.png",
         "URL": "javascript:(function(){ var wb = 'https://archive.today/' + window.location.href;window.open(wb, '_blank');})();",
         "Folder": "🗃️ Archives"
       },
       {
         "Title": "Ghost Archive (YouTube)",
-        "Icon": "https://ghostarchive.org/favicon.ico",
+        "Favicon": "https://ghostarchive.org/favicon.ico",
         "URL": "javascript:(function(){ var wb = 'https://ghostarchive.org/search?term=' + encodeURIComponent(window.location.href);window.open(wb, '_blank');})();",
         "Folder": "🗃️ Archives"
       },
       {
         "Title": "Redlib (Reddit)",
-        "Icon": "https://redlib.catsarch.com/favicon.ico",
+        "Favicon": "https://redlib.catsarch.com/favicon.ico",
         "URL": "javascript:(function(){const url = location.href; const wb = url.replace(/^https?:\\/\\/(www\\.)?reddit\\.com/, 'https://redlib.catsarch.com');window.open(wb,'_blank');})();",
         "Folder": "🗃️ Archives"
       }
