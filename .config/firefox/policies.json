@@ -165,6 +165,11 @@
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/multi-account-containers/latest.xpi"
       }
+      "@react-devtools": {
+        "description": "developer tools for react",
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/react-devtools/latest.xpi"
+      }
     },
     "FirefoxHome": {
       "Search": false,
