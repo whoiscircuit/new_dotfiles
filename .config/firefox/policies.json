@@ -169,6 +169,11 @@
         "description": "developer tools for react",
         "installation_mode": "force_installed",
         "install_url": "https://addons.mozilla.org/firefox/downloads/latest/react-devtools/latest.xpi"
+      },
+      "sponsorBlocker@ajay.app": {
+        "description": "skip sponsor segments and useless parts in youtube videos",
+        "installation_mode": "force_installed",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi"
       }
     },
     "FirefoxHome": {
