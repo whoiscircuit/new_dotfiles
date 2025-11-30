@@ -44,6 +44,7 @@
 (ox/load-package "vertico")
 (ox/load-package "tab-line")
 (ox/load-package "mixed-pitch")
+(ox/load-package "mini-modeline")
 
 (use-package emacs
   :custom
