@@ -147,3 +147,15 @@ bindkey "^[[1;5D" backward-word # Ctrl+<Left> for vterm
 source "$ZDOTDIR/alias.zsh"
 
 [ -f "$ZDOTDIR/p10k.zsh" ] && source "$ZDOTDIR/p10k.zsh"
+
+
+####################
+# SHELL INTEGRATIONS
+####################
+# kitty
+if test -n "$KITTY_INSTALLATION_DIR"; then
+    export KITTY_SHELL_INTEGRATION="enabled"
+    autoload -Uz -- "$KITTY_INSTALLATION_DIR"/shell-integration/zsh/kitty-integration
+    kitty-integration
+    unfunction kitty-integration
+fi

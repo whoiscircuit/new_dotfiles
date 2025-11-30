@@ -18,8 +18,13 @@ export ZSHZ_DATA="${XDG_DATA_HOME}/z" # zsh-z plugin
 
 
 # add extra folders to $PATH
-export PATH="${XDG_DATA_HOME}/npm/bin:$PATH" # add npm global packages
-export PATH="$XDG_BIN_HOME:$PATH" # add my own scripts and binaries
+function add_to_path(){
+  if [[ ":$PATH:" != *":$1"* ]]; then
+    export PATH="$1:$PATH"
+  fi
+}
+add_to_path "${XDG_DATA_HOME}/npm/bin"
+add_to_path "${XDG_BIN_HOME}"
 
 # set defaults
 export EDITOR="code"

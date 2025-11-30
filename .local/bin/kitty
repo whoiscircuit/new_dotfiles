@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# wrapper for wget to change the default directory for the history file for a cleaner home directory
+exec $(which -a kitty | head -n2 | tail -n1) -1 $(echo $@)
