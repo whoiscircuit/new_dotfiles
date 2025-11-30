@@ -1,0 +1,17 @@
+#+TITLE: Which Key
+#+AUTHOR: oxcl
+#+PROPERTY: header-args :tangle yes
+* TLDR
+[[https://github.com/justbur/emacs-which-key][~which-key~]] package helps you remember keybindings and increase discoverability
+* Description
+Whenever you enter a multi-part key binding and emacs is waiting for you to input the rest of the keys ~use-package~ will show a small help buffer at the bottom of the frame to help you remember the key binding or discover new key bindings.
+
+* Config
+#+BEGIN_SRC elisp
+  (use-package which-key
+    :ensure nil
+    :demand t
+    :config
+    (which-key-mode)
+    (which-key-setup-minibuffer))
+#+END_SRC

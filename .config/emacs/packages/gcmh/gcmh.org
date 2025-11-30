@@ -1,0 +1,20 @@
+#+TITLE: GCMH
+#+AUTHOR: oxcl
+#+PROPERTY: header-args :tangle yes
+* TLDR
+Improves emacs garbage collection perfornamce
+* Descripiton
+[[https://github.com/emacsmirror/gcmh][Garbage Collector Magic Hack]] is an emacs package which improves emacs garbage collection performance by triggering garbage collection when emacs is inactive for a while (and by assuming you are getting a coffee or something)
+this will prevent freezes and stutters by avoiding garbage collection from being triggered at random times.
+* Config
+#+BEGIN_SRC elisp
+  (use-package gcmh
+    :hook (after-init . gcmh-mode)
+    :delight
+    :custom
+    gcmh-auto-idle-delay-factor 10
+    gcmh-low-cons-threshold (* 16 1024 1024) ; 16MB
+    gcmh-high-cons-threshold (* 1024 1024 1024) ; 1GB
+    :config
+    (remove-hook 'after-init-hook #'ox/revert-gc))
+#+END_SRC

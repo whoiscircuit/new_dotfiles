@@ -1,0 +1,13 @@
+#+TITLE: Vertico
+#+AUTHOR: oxcl
+#+PROPERTY: header-args :tangle yes
+
+* TLDR
+* Description
+* Config
+#+BEGIN_SRC elisp
+  (use-package vertico
+    :demand t
+    :config
+    (vertico-mode))
+#+END_SRC

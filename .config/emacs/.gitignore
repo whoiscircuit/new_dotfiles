@@ -1,0 +1,7 @@
+# -*- mode: gitignore; -*-
+*.elc
+\#*\#
+auto-save-list/
+tramp/
+.\#*
+*_archive

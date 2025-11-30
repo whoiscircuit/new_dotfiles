@@ -1,0 +1,33 @@
+#+TITLE: CUA Mode
+#+AUTHOR: oxcl
+#+PROPERTY: header-args :tangle yes
+
+* TLDR
+with ~cua-mode~ enabled ~C-c~, ~C-x~, ~C-v~ and ~C-z~ keybindings would work the same as other programs and editors.
+
+* Description
+With CUA Mode:
+ - ~C-c~ is copy
+ - ~C-x~ is cut
+ - ~C-v~ is paste
+ - ~C-z~ is undo
+
+CUA Mode also provides some nice customizations related to rectangle selection and how the cursor looks in insert modes (normal/read-only/overwrite)
+
+* Config
+#+BEGIN_SRC elisp
+  (use-package cua-base
+    :disabled
+    :ensure nil
+    :demand t
+    :config
+    (cua-mode t)
+    (setq cua-keep-region-after-copy t
+  	  cua-enable-cursor-indications t
+  	  cua-normal-cursor-color 'box
+  	  cua-overwrite-cursor-color 'hbar
+  	  cua-read-only-cursor-color 'hollow
+  	  cua-prefix-override-inhibit-delay 0.05
+  	  cua-auto-tabify-rectangles nil)
+    (setq-default cursor-in-non-selected-windows nil))
+#+END_SRC
