@@ -102,7 +102,7 @@
         "Favicon": "https://nitter.catsarch.com/favicon-32x32.png",
         "URL": "javascript:(function(){const url = location.href; const wb = url.replace(/^https?:\\/\\/(www\\.)?x\\.com/, 'https://twiiit.com');location.href = wb;})();",
         "Folder": "🗃️ Archives"
-      },
+      }
     ],
     "Containers": {
       "Default": [
