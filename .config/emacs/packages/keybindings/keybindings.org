@@ -41,7 +41,7 @@ taken from: [[https://github.com/emacsorphanage/god-mode/issues/43#issuecomment-
 		    [?\e] `(menu-item "" ,esc-binding :filter ox/-tty-ESC-filter)))))
   (ox/catch-tty-ESC) 
 #+END_SRC
-** Replace Global Keymap
+** Other
 #+BEGIN_SRC elisp
   (setq map (make-keymap))
 #+END_SRC

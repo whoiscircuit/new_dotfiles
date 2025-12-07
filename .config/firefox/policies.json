@@ -88,9 +88,21 @@
       {
         "Title": "Redlib (Reddit)",
         "Favicon": "https://redlib.catsarch.com/favicon.ico",
-        "URL": "javascript:(function(){const url = location.href; const wb = url.replace(/^https?:\\/\\/(www\\.)?reddit\\.com/, 'https://redlib.catsarch.com');window.open(wb,'_blank');})();",
+        "URL": "javascript:(function(){const url = location.href; const wb = url.replace(/^https?:\\/\\/(www\\.)?reddit\\.com/, 'https://redlib.catsarch.com');location.href = wb;})();",
         "Folder": "🗃️ Archives"
-      }
+      },
+      {
+        "Title": "Invidious (YouTube)",
+        "Favicon": "https://yewtu.be/favicon-32x32.png?v=f14f3e1",
+        "URL": "javascript:(function(){const url = location.href; const wb = url.replace(/^https?:\\/\\/(www\\.)?youtube\\.com/, 'https://yewtu.be');location.href = wb;})();",
+        "Folder": "🗃️ Archives"
+      },
+      {
+        "Title": "Nitter (x.com/Twitter)",
+        "Favicon": "https://nitter.catsarch.com/favicon-32x32.png",
+        "URL": "javascript:(function(){const url = location.href; const wb = url.replace(/^https?:\\/\\/(www\\.)?x\\.com/, 'https://twiiit.com');location.href = wb;})();",
+        "Folder": "🗃️ Archives"
+      },
     ],
     "Containers": {
       "Default": [
@@ -178,10 +190,10 @@
         "install_url": "https://github.com/mkaply/queryamoid/releases/download/v0.2/query_amo_addon_id-0.2-fx.xpi",
         "default_area": "menupanel"
       },
-      "vimium-c@gdh1995.cn": {
+      "tridactyl.vim@cmcaine.co.uk": {
         "description": "control web pages and the browser with the keyboard",
         "installation_mode": "force_installed",
-        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/vimium-c/latest.xpi",
+        "install_url": "https://addons.mozilla.org/firefox/downloads/latest/tridactyl-vim/latest.xpi",
         "default_area": "navbar"
       },
       "@testpilot-containers": {
