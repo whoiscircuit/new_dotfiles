@@ -11,8 +11,6 @@
     "editor.minimap.enabled": false,
     "window.menuBarVisibility": "toggle",
     "chat.commandCenter.enabled": false,
-    "workbench.layoutControl.enabled": false,
-    "window.customTitleBarVisibility": "never",
     "workbench.editor.centeredLayoutFixedWidth": true,
     "workbench.editor.showTabIndex": true,
     "workbench.editor.tabSizingFixedMaxWidth": 250,
@@ -29,4 +27,5 @@
     "zenMode.hideStatusBar": false,
     "zenMode.showTabs": "multiple",
     "zenMode.restore": true,
+    "window.customTitleBarVisibility": "never",
 }
