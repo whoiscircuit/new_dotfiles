@@ -16,4 +16,5 @@ ensure_dir "$CONFIG/fontconfig"
 ensure_dir "$HOME/.ssh"
 ensure_dir "$CONFIG/systemd"
 ensure_dir "$HOME/.mozilla/firefox/default"
+ensure_dir "$CONFIG/Code/User"
 (cd "$HOME/.dotfiles" && stow . --target="$HOME")
