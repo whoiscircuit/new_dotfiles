@@ -292,6 +292,9 @@
       },
       "browser.newtab.privateAllowed": {
         "Value": true
+      },
+      "network.captive-portal-service.enabled": {
+        "Value": false
       }
     },
     "PromptForDownloadLocation": false,
