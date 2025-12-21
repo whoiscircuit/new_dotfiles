@@ -45,7 +45,7 @@
 	recurse = true
 	recurseSubmodules = on-demand
 
-[url "git@github.com:whoiscircuit/"]
+[url "git@github.com:oxcl/"]
 	insteadOf = "me:"
 
 [url "git@github.com:"]
